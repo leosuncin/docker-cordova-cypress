@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t cordova-cypress .
+  - docker run cordova-cypress /bin/sh -c "android list && node -v && npm -v && yarn -v && cypress verify"

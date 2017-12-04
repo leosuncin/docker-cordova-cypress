@@ -9,7 +9,6 @@ RUN apt-get update -qq && \
 	apt-get update -qq && \
 	apt-get install -qq -y --no-install-recommends yarn libxtst6 libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 xvfb && \
     rm -rf /var/lib/apt/lists/* && \
-    apt-get clean -y && \
-    yarn global add cypress@latest
+    apt-get clean -y
 
 WORKDIR "/tmp/repo"

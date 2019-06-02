@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-  - docker build -t cordova-cypress .
-  - docker run cordova-cypress /bin/sh -c "android list && yarn global add cypress && cypress verify"
+  - make build
+  - make test

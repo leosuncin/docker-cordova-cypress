@@ -9,6 +9,9 @@ RUN apt-get update -qq && \
 	apt-get update -qq && \
 	apt-get install -qq -y --no-install-recommends yarn libxtst6 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 xvfb jq && \
     rm -rf /var/lib/apt/lists/* && \
-    apt-get clean -y
+    apt-get clean -y &&\
+	useradd --create-home cypress
+
+USER cypress
 
 WORKDIR "/tmp/repo"

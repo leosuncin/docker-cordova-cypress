@@ -2,6 +2,7 @@ FROM beevelop/cordova
 
 LABEL maintainer="Jaime Leonardo Suncin Cruz <leosuncin@gmail.com>"
 
+ENV PATH $PATH:$ANDROID_HOME/tools/bin
 RUN apt-get update -qq && \
 	apt-get install -qq -y --no-install-recommends apt-transport-https && \
 	curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \

@@ -1,0 +1,15 @@
+#!/bin/bash
+# hooks/test
+# https://docs.docker.com/docker-cloud/builds/advanced/
+
+# $IMAGE_NAME var is injected into the build so the tag is correct.
+echo "[***] Test hook running"
+
+echo "Test Android"
+docker run \
+	--rm ${IMAGE_NAME} \
+	sh -c "sdkmanager --list"
+echo "Test Cypress"
+docker run \
+	--rm ${IMAGE_NAME} \
+	sh -c "yarn global add --silent cypress && yarn exec cypress verify"

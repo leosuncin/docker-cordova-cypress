@@ -3,7 +3,7 @@
 [![Docker Automated Build](https://img.shields.io/docker/automated/leosuncin/cordova-cypress?style=flat-square)](https://hub.docker.com/r/leosuncin/cordova-cypress/)
 [![Docker Build Status](https://img.shields.io/docker/build/leosuncin/cordova-cypress.svg?style=flat-square)](https://hub.docker.com/r/leosuncin/cordova-cypress/)
 ![MicroBadger Layers](https://img.shields.io/microbadger/layers/leosuncin/cordova-cypress?style=flat-square)
-![MicroBadger Size](https://img.shields.io/microbadger/image-size/leosuncin/cordova-cypress)
+![MicroBadger Size](https://img.shields.io/microbadger/image-size/leosuncin/cordova-cypress?style=flat-square)
 
 # Latest Android with Node.js `v8` (npm and yarn)
 
